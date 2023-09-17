@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Alertify -->
+    <link rel="stylesheet" type="text/css" href="css/alertify.js-0.3.9/themes/alertify.core.css">
+    <link rel="stylesheet" type="text/css" href="css/alertify.js-0.3.9/themes/alertify.default.css">
+    <link rel="stylesheet" type="text/css" href="css/alertify.js-0.3.9/themes/alertify.bootstrap.css">
+
+    <title>Bolao de Futebol</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="banner">
+            <img src="img/escudos-de-futebol.png"
+            alt="y">
+    </div>
+        <div >
+            <div class="title">
+                <h4 <font color="white" >
+                  <td>
+                    <font color="white" > Usuário:
+                    <font color="yellow">[ jogador99 ]</font>
+                    </font>
+                  </td>
+                    <img src="img/botao-sair.png" width="30px" height="30px">
+                </h4>
+            </div>
+        </div>
+    </header>
+
+    
+     <!-- Opções para adicionar uma nova APOSTA -->
+<table>
+    <section class="newAposta">
+    <FORM >
+      <P>
+        <input type="text" id="newJogador" placeholder="jogador99" value="marco" readonly hidden >
+        <select id="newPartida"> 
+            <option disabled selected value>Partidas da Rodada 20</option>
+            <option value="Flamengo x Bahia">Flamengo x Bahia</option>
+            <option value="Coritiba x Atlético-PR">Coritiba x Atlético-PR</option>
+            <option value="Fortaleza x Grêmio">Fortaleza x Grêmio</option>
+            <option value="Internacional x Atlético-MG" >Internacional x Atlético-MG</option>
+            <option value="Cruzeiro x América-MG">Cruzeiro x América-MG</option>
+            <option value="Bragantino x Palmeiras">Bragantino x Palmeiras</option>
+            <option value="Santos x Vasco">Santos x Vasco</option>
+            <option value="São Paulo x Corinthias">São Paulo x Corinthias</option>
+            <option value="Botafogo x Goiás">Botafogo x Goiás</option>
+            <option value="Cuiabá x Fluminense">Cuiabá x Fluminense</option>
+        </select>
+        <label for="newPlacar1" style="color: black">Placar: </label>
+            <input type="text" id="newPlacar1">
+        <label for="newPlacar2" style="color: black"> X </label>
+            <input type="text" id="newPlacar2">
+        <input type="button" style="background-color: rgb(44, 9, 245)" value="Incluir Aposta" class="btn btn-primary" onclick="newAposta()" style="float: right;">
+       </P>
+     </FORM>
+    </section>
+
+
+    <!-- Tabela com apostas que foram feitas -->
+
+        <table id="myTable" class="table table-striped" style="width:100%">
+            <thead >       
+                <tr class="table-dark">
+                    <th style="width: 500px;">Partida</th>
+                    <th>Apostador</th>
+                    <th>Placar Mandante</th>
+                    <th>Placar Visitante</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>   
+            <tbody>
+                <section class="items">
+                </section>
+            </tbody>
+        </table>
+ </table>
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="css/alertify.js-0.3.9/lib/alertify.min.js"></script>
+</body>
+
+</html>
+
+
